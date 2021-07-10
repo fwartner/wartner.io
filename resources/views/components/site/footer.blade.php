@@ -84,7 +84,7 @@
                 </a>
             </div>
             <p class="mt-8 text-base text-center text-gray-400">
-                &copy; {{ date('Y') }} wartner.io - All rights resevred. Made with <i class="text-red-500 fas fa-heart"></i> and <i class="text-brown-400 fas fa-coffee"></i>
+                &copy; {{ date('Y') }} wartner.io - All rights resevred. Made with <i class="text-red-400 fas fa-heart"></i> and <i class="fas fa-coffee"></i>
             </p>
         </div>
     </footer>

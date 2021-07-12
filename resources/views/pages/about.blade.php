@@ -57,6 +57,7 @@
                         </div> --}}
                         <div
                             class="mt-5 prose prose-gray text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                            <h3>Intro</h3>
                             <p>I´m florian and I ❤️ to create open source products. Most of the time I´m working with Laravel - The most popular PHP-Framework.</p>
                             <p>In the past I created projects like Laramap & PHPMap. Unfortunately some projects went offline due to the amount of time i needed to spend on both projects.</p>
                             <p><strong>Here are some facts about me:</strong></p>
@@ -69,13 +70,14 @@
                                 <li>💬 Ask me about infrastructure and laravel</li>
                             </ul>
                             <p>I am always interested in learning new things. Also I like to meet new people from all around the world. That's also why I'm so in love with open source. Because I think that open source enables you to work with interesting people from all over the world together on technology that you will love!</p>
-                            <h3>My Story (Short version)</h3>
+                            <h3>My Story into development (The laravel way)</h3>
                             <p>I grown up in Lübeck, Germany. (Very close to the baltic sea 🌊)</p>
                             <p>I got into computers back when I was 13. After a couple of tries re-assambling my computer, I came across software-development. Back in that time it was Visual Basic but I figured out that C# is way faster in compiling so I moved to that one.</p>
                             <p>Around the time when I was 16 or so I was getting in touch with html and web-development. This was a game-changer for me since I could show my work to everyone in the world but at this time I wasn't really good at it ^^'.</p>
 
                             <p>So I was looking for something new. PHP was the shit! I've bought some books about PHP (Version 5.6) and started learning. I was looking for a framework that was built on top of the MVC pattern. I found codeigniter, crafted a few projects with this stuff for a few years but it turned out that I had to find something better.</p>
-                            <p>Then I found Laravel and felt on love with it ❤️</p>
+                            <p>Then I found Laravel and felt on love with it ❤️.</p>
+                            <p>Since then I was mostly working with Laravel. It allows you to create almost everything that you could possibly imagine in just a few days, weeks or months.</p>
                         </div>
                     </div>
                 </div>

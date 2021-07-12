@@ -44,7 +44,7 @@
                                             d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    <span class="ml-2">Photograph by my beautiful girlfriend</span>
+                                    <span class="ml-2">Photograph by my beautiful girlfriend 👫</span>
                                 </figcaption>
                             </figure>
                         </div>
@@ -57,7 +57,7 @@
                         </div> --}}
                         <div
                             class="mt-5 prose prose-gray text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                            <p>I´m florian and i ❤️ to create open source products. Most of the time I´m working with Laravel - The most popular PHP-Framework.</p>
+                            <p>I´m florian and I ❤️ to create open source products. Most of the time I´m working with Laravel - The most popular PHP-Framework.</p>
                             <p>In the past I created projects like Laramap & PHPMap. Unfortunately some projects went offline due to the amount of time i needed to spend on both projects.</p>
                             <p><strong>Here are some facts about me:</strong></p>
                             <ul>

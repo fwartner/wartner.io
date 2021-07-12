@@ -37,9 +37,9 @@ class Post extends Model implements Feedable
             ->title($this->title)
             ->summary($this->excerpt)
             ->updated($this->updated_at)
-            ->link(route('blog.post.show', $this->slug))
+            ->link(route('blog.posts.show', $this->slug))
             ->authorName($this->author->name)
-            ->authorEmail($this->autor->email);
+            ->authorEmail($this->author->email);
     }
 
     /**

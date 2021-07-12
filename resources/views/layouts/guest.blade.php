@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        @include('_includes.head')
 
-        <title>@yield('page_title') - {{ config('app.name') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @include('_includes.head')
+    @include('feed::links')
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-        <script src="https://kit.fontawesome.com/d655bc65df.js" crossorigin="anonymous"></script>
+    <title>@yield('page_title') - {{ config('app.name') }}</title>
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        @stack('styles')
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/d655bc65df.js" crossorigin="anonymous"></script>
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
-        @stack('scripts')
-    </head>
-    <body>
-        @include('_includes.navigation')
-        <div class="font-sans antialiased text-gray-900">
-            {{ $slot }}
-        </div>
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @stack('styles')
 
-        <x-site.footer />
-    </body>
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}" defer></script>
+    @stack('scripts')
+</head>
+
+<body>
+    @include('_includes.navigation')
+    <div class="font-sans antialiased text-gray-900">
+        {{ $slot }}
+    </div>
+
+    <x-site.footer />
+
+</body>
+
 </html>

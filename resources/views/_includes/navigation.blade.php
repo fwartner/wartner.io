@@ -13,7 +13,7 @@
                         {{ __('Home') }}
                     </x-jet-nav-link>
 
-                    <x-jet-nav-link href="{{ route('posts.index') }}" :active="request()->routeIs('posts.*')">
+                    <x-jet-nav-link href="{{ route('blog.posts') }}" :active="request()->routeIs('blog.posts.*')">
                         {{ __('Blog') }}
                     </x-jet-nav-link>
 
@@ -48,7 +48,7 @@
                 {{ __('Home') }}
             </x-jet-responsive-nav-link>
 
-            <x-jet-responsive-nav-link href="posts.index" :active="request()->routeIs('posts.*')">
+            <x-jet-responsive-nav-link href="{{ route('blog.posts') }}" :active="request()->routeIs('blog.posts.*')">
                 {{ __('Blog') }}
             </x-jet-responsive-nav-link>
 

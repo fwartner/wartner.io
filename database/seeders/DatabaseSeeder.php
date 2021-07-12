@@ -22,8 +22,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->createUsers();
+        $this->call(CategorySeeder::class);
+        $this->call(PostSeeder::class);
     }
 
+   /**
+    * Create users
+    *
+    * @return void
+    */
     private function createUsers()
     {
         collect($this->users)->each(function ($user) {

@@ -11,4 +11,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::resource('posts', PostController::class);
+Route::prefix('blog')->as('blog.')->group(function () {
+    Route::get('/', [PostController::class, 'index'])->name('posts');
+    Route::resource('posts', PostController::class);
+});
+
+Route::feeds();

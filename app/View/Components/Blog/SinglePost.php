@@ -2,18 +2,21 @@
 
 namespace App\View\Components\Blog;
 
+use App\Models\Post;
 use Illuminate\View\Component;
 
 class SinglePost extends Component
 {
+    public $post;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Post $post)
     {
-        //
+        $this->post = $post;
     }
 
     /**

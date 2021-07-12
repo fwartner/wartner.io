@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -14,7 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::orderBy('created_at', 'desc')->paginate(6);
+        return view('blog.index', compact('posts'));
     }
 
     /**
@@ -41,12 +43,14 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  string  $slug
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        return view('blog.show');
+        $post = Post::where('slug', $slug)->first();
+
+        return view('blog.show', compact('post'));
     }
 
     /**

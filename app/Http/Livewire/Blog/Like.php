@@ -30,7 +30,7 @@ class Like extends Component
             $this->count++;
         } elseif (($ip = request()->ip()) && ($userAgent = request()->userAgent())) {
             $this->post->likes()->create([
-                'ip' => $ip,
+                'ip_address' => $ip,
                 'user_agent' => $userAgent,
             ]);
 

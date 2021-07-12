@@ -21,7 +21,7 @@
                         {{ __('About') }}
                     </x-jet-nav-link>
 
-                    <x-jet-nav-link href="{{ route('podcasts.index') }}" :active="request()->routeIs('podcasts.*')">
+                    <x-jet-nav-link href="https://load-podcast.com">
                         {{ __('Podcast') }}
                     </x-jet-nav-link>
                 </div>
@@ -56,7 +56,7 @@
                 {{ __('About') }}
             </x-jet-responsive-nav-link>
 
-            <x-jet-responsive-nav-link href="podcasts.index" :active="request()->routeIs('podcasts.*')">
+            <x-jet-responsive-nav-link href="https://load-podcast.com">
                 {{ __('Podcast') }}
             </x-jet-responsive-nav-link>
         </div>

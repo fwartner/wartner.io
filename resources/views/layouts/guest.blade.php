@@ -14,9 +14,11 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        @stack('styles')
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        @stack('scripts')
     </head>
     <body>
         @include('_includes.navigation')

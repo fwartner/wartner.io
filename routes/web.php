@@ -6,6 +6,7 @@ use App\Http\Controllers\Podcast\PodcastController;
 
 
 Route::view('/', 'welcome')->middleware('cacheResponse');
+Route::view('/contact', 'pages.contact')->middleware('cacheResponse');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

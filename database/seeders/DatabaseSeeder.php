@@ -23,7 +23,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->createUsers();
         $this->call(CategorySeeder::class);
-        $this->call(PostSeeder::class);
     }
 
    /**

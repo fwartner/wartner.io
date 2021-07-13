@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'newsletter' => [
+        'api_token' => env('NEWSLETTER_API_TOKEN'),
+        'base_url' => env('NEWSLETTER_API_BASE_URL'),
+        'list_id' => env('NEWSLETTER_API_LIST_ID')
+    ],
+
 ];

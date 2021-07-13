@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 class PostItem extends Component
 {
     /**
-     * @var Post $post
+     * @var Post
      */
     public $post;
 

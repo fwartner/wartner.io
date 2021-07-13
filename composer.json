@@ -9,6 +9,7 @@
         "algolia/scout-extended": "^1.20",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
+        "fwartner/laravel-auto-helpers": "^0.0.2",
         "guzzlehttp/guzzle": "^7.3",
         "laravel/framework": "^8.40",
         "laravel/jetstream": "^2.3",
@@ -22,6 +23,7 @@
         "spatie/laravel-sitemap": "^6.0"
     },
     "require-dev": {
+        "brianium/paratest": "^6.3",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",

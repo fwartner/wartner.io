@@ -7,7 +7,6 @@
                     About Me
                 </h2>
             </div>
-
         </div>
 
         <div class="bg-white overflow-hidden">

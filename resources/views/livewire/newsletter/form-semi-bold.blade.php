@@ -4,10 +4,10 @@
             <div class="px-6 py-6 bg-gray-700 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
                 <div class="xl:w-0 xl:flex-1">
                     <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
-                        Want product news and updates?
+                        Don't want to miss anything?
                     </h2>
                     <p class="mt-3 max-w-3xl text-lg leading-6 text-gray-200">
-                        Sign up for our newsletter to stay up to date.
+                        Sign up for my newsletter and get the latest stuff that I publish.
                     </p>
                 </div>
                 <div class="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
@@ -22,10 +22,7 @@
                         </button>
                     </form>
                     <p class="mt-3 text-sm text-gray-200">
-                        We care about the protection of your data. Read our
-                        <a href="#" class="text-white font-medium underline">
-                            Privacy Policy.
-                        </a>
+                        I don't sell your email to anyone. I promise!
                     </p>
                 </div>
             </div>

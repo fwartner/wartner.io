@@ -3,7 +3,7 @@
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center">
             <div class="lg:w-0 lg:flex-1">
                 <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl" id="newsletter-headline">
-                    Sign up for our newsletter
+                    Sign up for my newsletter
                 </h2>
                 <p class="mt-3 max-w-3xl text-lg leading-6 text-gray-300">
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt
@@ -24,10 +24,7 @@
                     </div>
                 </form>
                 <p class="mt-3 text-sm text-gray-300">
-                    We care about the protection of your data. Read our
-                    <a href="#" class="text-white font-medium underline">
-                        Privacy Policy.
-                    </a>
+                    I don't sell your email to anyone. I promise!
                 </p>
             </div>
         </div>

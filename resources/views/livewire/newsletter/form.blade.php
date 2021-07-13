@@ -23,10 +23,7 @@
                         </button>
                     </form>
                     <p class="mt-3 text-sm text-gray-100">
-                        I care about the protection of your data. Read my
-                        <a href="#" class="text-white font-medium underline">
-                            Privacy Policy.
-                        </a>
+                        I don't sell your email to anyone. I promise!
                     </p>
                 </div>
             </div>

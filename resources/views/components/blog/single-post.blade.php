@@ -1,23 +1,54 @@
 <div>
-    <div class="py-6 px-4 leading-6 text-black bg-white sm:rounded-lg sm:p-6 shadow-xs">
-        <article aria-labelledby="post-title" class="text-black">
-            <div >
-                <h1 id="post-title" class="mx-0 mt-4 mb-2 text-2xl font-bold leading-8 text-gray-900">
-                    {{ $post->title }}
+    <figure>
+        <img class="w-full rounded-lg" src="{{ $post->banner }}" alt="{{ $post->title }}">
+    </figure>
+
+    <div class="relative py-16 bg-white overflow-hidden">
+        <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+            <div class="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
+                <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+                </svg>
+                <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404"
+                    height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+                </svg>
+                <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                </svg>
+            </div>
+        </div>
+        <div class="relative px-4 sm:px-6 lg:px-8">
+            <div class="text-lg max-w-prose mx-auto">
+                <h1>
+                    <span
+                        class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">{{ $post->title }}</span>
                 </h1>
-
-                <hr class="m-0 h-0 border-r-0 border-b-0 border-l-0 border-t border-gray-300 border-solid box-border" />
             </div>
-
-            <div class="mt-4 max-w-full text-sm leading-5 text-gray-800 prose">
-                <p class="my-5 mx-0">
-                    {!! $post->body !!}
-                </p>
+            <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+                {!! $post->body !!}
             </div>
-
-            <div class="flex justify-between mt-6">
-                @livewire('blog.like', ['post' => $post], key($post->id))
-            </div>
-        </article>
+        </div>
     </div>
+
 </div>

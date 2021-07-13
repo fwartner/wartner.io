@@ -12,7 +12,7 @@
                 </div>
                 <div class="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
                     @if ($subscribed)
-                        <p>Welcome to the list! <3</p>
+                        <p class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Welcome to the list! ❤️</p>
                     @else
                         <form class="sm:flex" wire:submit.prevent="subscribeToList">
                             <label for="email-address" class="sr-only">Email address</label>
@@ -20,7 +20,7 @@
                                 autocomplete="email" required
                                 class="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-white rounded-md"
                                 placeholder="Enter your email">
-                            <button type="button" wire:click="subscribeToList"
+                            <button type="submit" wire:click="subscribeToList"
                                 class="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent shadow text-base font-medium rounded-md text-white bg-gray-500 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
                                 Notify me
                             </button>

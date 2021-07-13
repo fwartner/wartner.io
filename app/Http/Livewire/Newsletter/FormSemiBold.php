@@ -12,7 +12,7 @@ class FormSemiBold extends Component
 
     public function subscribeToList()
     {
-        $response = Http::withToken(config('services.newsletter.api_token'))->post(config('services.newsletter.base_url') . 'mailcoach/api/email-lists/'. config('services.newsletter.list_id') .'/subscribers', [
+        $response = Http::withToken(config('services.newsletter.api_token'))->post(config('services.newsletter.base_url') . '/api/email-lists/'. config('services.newsletter.list_id') .'/subscribers', [
             'email' => $this->email
         ]);
 

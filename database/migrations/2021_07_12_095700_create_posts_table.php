@@ -19,6 +19,7 @@ class CreatePostsTable extends Migration
             $table->id();
 
             $table->foreignIdFor(User::class);
+            $table->foreignIdFor(Category::class);
             $table->string('title');
             $table->string('slug')->unique();
             $table->longText('body');

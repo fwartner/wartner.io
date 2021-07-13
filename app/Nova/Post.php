@@ -46,7 +46,7 @@ class Post extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             BelongsTo::make('User')->sortable(),
-            BelongsToMany::make('Categories'),
+            BelongsTo::make('Category'),
             Text::make('Title'),
             Trix::make('Body')->withFiles('public'),
         ];

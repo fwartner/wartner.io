@@ -102,8 +102,8 @@ class Post extends Model implements Feedable
     /**
      * @return void
      */
-    public function categories()
+    public function category()
     {
-        return $this->belongsToMany(Category::class, 'post_category', 'post_id', 'category_id');
+        return $this->belongsTo(Category::class, 'category_id', 'id');
     }
 }

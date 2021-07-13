@@ -3,43 +3,31 @@
         <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
             <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
                 <div class="px-5 py-2">
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    <a href="/about" class="text-base text-gray-500 hover:text-gray-900">
                         About
                     </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    <a href="/blog" class="text-base text-gray-500 hover:text-gray-900">
                         Blog
                     </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                        Jobs
+                    <a href="https://load-podcast.com" class="text-base text-gray-500 hover:text-gray-900">
+                        Podcast
                     </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                        Press
-                    </a>
-                </div>
-
-                <div class="px-5 py-2">
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                        Accessibility
-                    </a>
-                </div>
-
-                <div class="px-5 py-2">
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                        Partners
+                    <a href="https://github.com/fwartner" class="text-base text-gray-500 hover:text-gray-900">
+                        Open Source
                     </a>
                 </div>
             </nav>
             <div class="flex justify-center mt-8 space-x-6">
-                <a href="https://instagram.com/wartner.io" class="text-gray-400 hover:text-gray-500">
+                <a href="https://instagram.com/wartnerio" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"

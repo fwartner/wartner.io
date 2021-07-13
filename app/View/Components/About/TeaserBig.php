@@ -1,14 +1,11 @@
 <?php
 
-namespace App\View\Components\Blog;
+namespace App\View\Components\About;
 
-use App\Models\Post;
 use Illuminate\View\Component;
 
-class PostListSmall extends Component
+class TeaserBig extends Component
 {
-    public $posts;
-
     /**
      * Create a new component instance.
      *
@@ -16,7 +13,7 @@ class PostListSmall extends Component
      */
     public function __construct()
     {
-        $this->posts = Post::orderBy('created_at', 'desc')->take(3)->get();
+        //
     }
 
     /**
@@ -26,6 +23,6 @@ class PostListSmall extends Component
      */
     public function render()
     {
-        return view('components.blog.post-list-small');
+        return view('components.about.teaser-big');
     }
 }

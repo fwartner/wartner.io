@@ -5,4 +5,7 @@
 
     <x-blog.post-list-small />
 
+    <x-about.teaser-big />
+
+    @livewire('newsletter.form-semi-bold')
 </x-guest-layout>

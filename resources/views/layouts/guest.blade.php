@@ -25,7 +25,7 @@
 
 <body>
     @include('_includes.navigation')
-    <div class="font-sans antialiased text-gray-900">
+    <div class="font-sans antialiased text-gray-900 bg-white">
         {{ $slot }}
     </div>
 

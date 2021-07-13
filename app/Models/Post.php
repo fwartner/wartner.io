@@ -15,7 +15,7 @@ class Post extends Model implements Feedable
 {
     use HasFactory;
     use HasLikes;
-    use Searchable;
+    // use Searchable;
 
     /**
      * @return void

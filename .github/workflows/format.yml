@@ -3,7 +3,7 @@ name: 'Code formatting'
 on:
     push:
         branches:
-            - master
+            - main
 
 jobs:
     code-formatting:

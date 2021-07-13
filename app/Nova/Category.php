@@ -43,6 +43,7 @@ class Category extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Title'),
+            Text::make('Banner'),
         ];
     }
 

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Blog\PostController;
 
-Route::view('/', 'welcome')->middleware('cacheResponse');
+Route::view('/', 'welcome');
 Route::view('/contact', 'pages.contact')->middleware('cacheResponse');
 Route::view('/about', 'pages.about')->middleware('cacheResponse');
 Route::view('/imprint', 'pages.imprint')->middleware('cacheResponse');

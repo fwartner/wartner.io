@@ -35,4 +35,4 @@ Install dependencies
 To deploy this project follow the official laravel documentation: https://laravel.com/docs/8.x/deployment
 
 ## Sponsor
-<iframe src="https://github.com/sponsors/fwartner/button" title="Sponsor fwartner" height="35" width="116" style="border: 0;"></iframe>
+If you like what I am doing please consider [sponsor my work](https://github.com/sponsors/fwartner)!

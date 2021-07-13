@@ -94,7 +94,7 @@ class Post extends Model implements Feedable
     /**
      * @return void
      */
-    public function author()
+    public function user()
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }

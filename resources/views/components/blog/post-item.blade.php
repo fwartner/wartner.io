@@ -30,15 +30,15 @@
             <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
                     <a href="#">
-                        <span class="sr-only">{{ $post->author->name }}</span>
-                        <img class="h-10 w-10 rounded-full" src="{{ $post->author->profile_photo_url }}"
-                            alt="{{ $post->author->name }}">
+                        <span class="sr-only">{{ $post->user->name }}</span>
+                        <img class="h-10 w-10 rounded-full" src="{{ $post->user->profile_photo_url }}"
+                            alt="{{ $post->user->name }}">
                     </a>
                 </div>
                 <div class="ml-3">
                     <p class="text-sm font-medium text-gray-900">
                         <a href="#" class="hover:underline">
-                            {{ $post->author->name }}
+                            {{ $post->user->name }}
                         </a>
                     </p>
                     <div class="flex space-x-1 text-sm text-gray-500">

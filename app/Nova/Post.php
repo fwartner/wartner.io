@@ -4,11 +4,9 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
-use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Post extends Resource
 {
@@ -32,7 +30,7 @@ class Post extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'title'
+        'id', 'title',
     ];
 
     /**

@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
      * @var array
      */
     private $users = [
-        'florian'
+        'florian',
     ];
 
     /**
@@ -25,11 +25,11 @@ class DatabaseSeeder extends Seeder
         $this->call(CategorySeeder::class);
     }
 
-   /**
-    * Create users
-    *
-    * @return void
-    */
+    /**
+     * Create users
+     *
+     * @return void
+     */
     private function createUsers()
     {
         collect($this->users)->each(function ($user) {
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
             ]);
 
             $user->update([
-                'email_verified_at' => now()
+                'email_verified_at' => now(),
             ]);
         });
     }

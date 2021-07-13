@@ -6,17 +6,15 @@
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
                 <div class="grid grid-cols-3 gap-4"">
-                     @foreach ($post->categories as $category)
                     <p class="m-0 text-sm font-medium leading-5 text-indigo-600">
                         <a href="">
                             <span
                                 class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
-                                {{ $category->title }}
+                                {{ $post->category->title }}
                             </span>
 
                         </a>
                     </p>
-                    @endforeach
                 </div>
                 <a href="{{ route('blog.posts.show', $post->slug) }}" class="block mt-2">
                     <p class="text-xl font-semibold text-gray-900">

@@ -7,3 +7,14 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="{{ asset('mstile-144x144.png') }}">
 <meta name="theme-color" content="#ffffff">
+<meta property="og:url" content="https://wartner.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="wartner.io - Development / Infrastructure / Life / More">
+<meta property="og:description" content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪. Most of the time I'm working with Laravel - The most popular PHP-Framework.">
+<meta property="og:image" content="https://wartner.io/og/opengraph.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="https://twitter.com/fwartner">
+<meta property="twitter:url" content="https://wartner.io/">
+<meta name="twitter:title" content="wartner.io - Development / Infrastructure / Life / More">
+<meta name="twitter:description" content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪. Most of the time I'm working with Laravel - The most popular PHP-Framework.">
+<meta name="twitter:image" content="https://wartner.io/og/opengraph.png">

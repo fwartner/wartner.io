@@ -88,7 +88,7 @@ class Post extends Model implements Feedable
      */
     public function getExcerptAttribute()
     {
-        return Str::limit($this->body, 200, '...');
+        return Str::limit(strip_tags($this->body), 200, '...');
     }
 
     /**

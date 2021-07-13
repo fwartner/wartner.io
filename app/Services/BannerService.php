@@ -13,7 +13,7 @@ class BannerService
     public function getBanner(Post $post)
     {
         if ($post->categories) {
-            return 'https://banners.beyondco.de/' . $post->title . $post->categories->first()->banner;
+            return 'https://banners.beyondco.de/' . $post->title . $post->category->banner;
         }
 
         return null;

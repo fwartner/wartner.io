@@ -1,6 +1,7 @@
 {
     "private": true,
     "scripts": {
+        "format": "prettier --write \"**/*.{css,js}\"",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -18,9 +19,8 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "postcss-import": "^14.0.1",
-        "tailwindcss": "^2.2.2"
-    },
-    "dependencies": {
-        "@tailwindcss/aspect-ratio": "^0.2.1"
+        "tailwindcss": "^2.2.2",
+        "@tailwindcss/aspect-ratio": "^0.2.1",
+        "prettier": "^2.3.2"
     }
 }

@@ -11,6 +11,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@tailwindcss/aspect-ratio": "^0.2.1",
         "@tailwindcss/forms": "^0.3.1",
         "@tailwindcss/typography": "^0.4.0",
         "alpinejs": "^3.0.6",
@@ -19,8 +20,10 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "postcss-import": "^14.0.1",
-        "tailwindcss": "^2.2.2",
-        "@tailwindcss/aspect-ratio": "^0.2.1",
-        "prettier": "^2.3.2"
+        "prettier": "^2.3.2",
+        "tailwindcss": "^2.2.2"
+    },
+    "dependencies": {
+        "turbolinks": "^5.2.0"
     }
 }

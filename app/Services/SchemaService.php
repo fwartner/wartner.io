@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
-use Spatie\SchemaOrg\Schema;
 use Spatie\SchemaOrg\Graph;
+use Spatie\SchemaOrg\Schema;
 
 class SchemaService
 {

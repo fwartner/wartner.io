@@ -30,6 +30,6 @@ class SchemaService
             ->logo(asset('logo/FW_Slant.png'))
             ->founder($founder);
 
-        return $graph;
+        return $graph->toScript();
     }
 }

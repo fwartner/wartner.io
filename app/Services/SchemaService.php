@@ -13,6 +13,7 @@ class SchemaService
     public static function buildSchema()
     {
         $graph = new Graph();
+
         $founder = $graph->person('fwartner')
             ->givenName('Florian')
             ->familyName('Wartner')
@@ -29,6 +30,6 @@ class SchemaService
             ->logo(asset('logo/FW_Slant.png'))
             ->founder($founder);
 
-        return json_encode($graph);
+        return $graph;
     }
 }

@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands\Seo;
 
-use Illuminate\Console\Command;
 use Carbon\Carbon;
+use Illuminate\Console\Command;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 

@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @stack('styles')
     @livewireStyles
+
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
-    @stack('scripts')
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E29T5QCFW7"></script>
@@ -44,6 +44,7 @@
 
     <x-site.footer />
     @livewireScripts
+    @stack('scripts')
 </body>
 
 </html>

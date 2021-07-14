@@ -13,8 +13,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::prefix('blog')->as('blog.')->group(function () {
-    Route::get('/', [PostController::class, 'index'])->name('posts');
-    Route::resource('posts', PostController::class);
+    Route::get('/', [PostController::class, 'index'])->name('posts')->middleware('cacheResponse');
+    Route::resource('posts', PostController::class)->middleware('cacheResponse');
 });
 
 Route::feeds();

@@ -2361,16 +2361,16 @@
         },
         {
             "name": "laravel/scout",
-            "version": "v9.2.2",
+            "version": "v9.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/scout.git",
-                "reference": "3c8a4904fc5736a481daf46e8534bb905f06dd15"
+                "reference": "5d62c83ea11b98f1f89ee78bdb82d7b8a1791e67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/scout/zipball/3c8a4904fc5736a481daf46e8534bb905f06dd15",
-                "reference": "3c8a4904fc5736a481daf46e8534bb905f06dd15",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/5d62c83ea11b98f1f89ee78bdb82d7b8a1791e67",
+                "reference": "5d62c83ea11b98f1f89ee78bdb82d7b8a1791e67",
                 "shasum": ""
             },
             "require": {
@@ -2429,7 +2429,7 @@
                 "issues": "https://github.com/laravel/scout/issues",
                 "source": "https://github.com/laravel/scout"
             },
-            "time": "2021-07-06T17:08:21+00:00"
+            "time": "2021-07-13T16:13:35+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -8552,16 +8552,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.8.4",
+            "version": "v1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "164ab771c8ccef341a07a21fae2ee3b770ec2e9a"
+                "reference": "cab38edc00804700518e110df2677ef34c3dbb2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/164ab771c8ccef341a07a21fae2ee3b770ec2e9a",
-                "reference": "164ab771c8ccef341a07a21fae2ee3b770ec2e9a",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/cab38edc00804700518e110df2677ef34c3dbb2e",
+                "reference": "cab38edc00804700518e110df2677ef34c3dbb2e",
                 "shasum": ""
             },
             "require": {
@@ -8608,7 +8608,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-07-06T16:57:00+00:00"
+            "time": "2021-07-13T14:20:58+00:00"
         },
         {
             "name": "myclabs/deep-copy",

@@ -59,7 +59,7 @@ class Post extends Model implements Feedable
      * @var array
      */
     protected $appends = [
-        'banner',
+        'banner', 'reading_time'
     ];
 
     protected $withCount = [
@@ -105,5 +105,16 @@ class Post extends Model implements Feedable
     public function category()
     {
         return $this->belongsTo(Category::class, 'category_id', 'id');
+    }
+
+    /**
+     * @return void
+     */
+    public function getReadingTimeAttribute()
+    {
+        $word = str_word_count(strip_tags($this->body));
+        $m = floor($word / 200);
+
+        return $m . ' minute' . ($m == 1 ? '' : 's');
     }
 }

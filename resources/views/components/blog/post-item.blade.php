@@ -47,7 +47,7 @@
                             &middot;
                         </span>
                         <span>
-                            6 min read
+                            {{ $post->reading_time }} read
                         </span>
                     </div>
                 </div>

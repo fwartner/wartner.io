@@ -59,7 +59,7 @@ class Post extends Model implements Feedable
      * @var array
      */
     protected $appends = [
-        'banner', 'reading_time'
+        'banner', 'reading_time',
     ];
 
     protected $withCount = [

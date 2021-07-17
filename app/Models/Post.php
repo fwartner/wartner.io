@@ -114,7 +114,12 @@ class Post extends Model implements Feedable
     {
         $word = str_word_count(strip_tags($this->body));
         $m = floor($word / 200);
+        $s = floor($word % 200 / (200 / 60));
 
-        return $m . ' minute' . ($m == 1 ? '' : 's');
+        if ($m == 0) {
+            return $s . ' second' . ($s == 1 ? '' : 's');
+        } else {
+            return $m . ' minute' . ($m == 1 ? '' : 's') . ', ' . $s . ' second' . ($s == 1 ? '' : 's');
+        }
     }
 }

@@ -40,7 +40,7 @@
                         </a>
                     </p>
                     <div class="flex space-x-1 text-sm text-gray-500">
-                        <time datetime="2020-03-16">
+                        <time datetime="{{ $post->created_at->format('Y-m-d') }}">
                             {{ $post->created_at->format('F j, Y') }}
                         </time>
                         <span aria-hidden="true">

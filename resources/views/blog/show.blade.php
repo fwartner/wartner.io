@@ -32,6 +32,16 @@
         </script>
     @endpush
     <x-guest-layout>
+        <div class="leading-6 text-gray-900 bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-gray-900 lg:flex lg:justify-between lg:px-8 sm:px-6 sm:py-8">
+                <div class="max-w-xl">
+                    <h2 class="m-0 text-4xl font-bold leading-10 text-white lg:text-4xl lg:leading-10 sm:text-5xl sm:leading-none sm:tracking-tight">
+                        <a href="{{ url('/blog', []) }}" class="cursor-pointer">Blog</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
         <div class="pb-5 pt-5 flex-1 min-w-0 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <x-blog.single-post :post="$post" />
             @livewire('newsletter.form-semi-bold')

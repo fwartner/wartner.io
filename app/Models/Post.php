@@ -118,6 +118,8 @@ class Post extends Model implements Feedable
 
         if ($m == 0) {
             return '1 minute';
+        } elseif ($s == 0) {
+            return $m . ' minute' . ($m == 1 ? '' : 's');
         } else {
             return $m . ' minute' . ($m == 1 ? '' : 's') . ', ' . $s . ' second' . ($s == 1 ? '' : 's');
         }

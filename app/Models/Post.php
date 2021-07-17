@@ -112,12 +112,12 @@ class Post extends Model implements Feedable
      */
     public function getReadingTimeAttribute()
     {
-        $word = str_word_count(strip_tags($this->body));
+        $word = str_word_count($this->body);
         $m = floor($word / 200);
         $s = floor($word % 200 / (200 / 60));
 
         if ($m == 0) {
-            return $s . ' second' . ($s == 1 ? '' : 's');
+            return '1 minute';
         } else {
             return $m . ' minute' . ($m == 1 ? '' : 's') . ', ' . $s . ' second' . ($s == 1 ? '' : 's');
         }

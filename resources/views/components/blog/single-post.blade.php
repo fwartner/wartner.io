@@ -13,7 +13,7 @@
                 <span class="block mt-2 text-3xl tracking-tight leading-8 sm:text-5xl sm:leading-none">{{ $post->title }}</span>
             </h1>
 
-            <p class="my-5 mx-0 prose prose-gray prose-lg leading-8">
+            <p class="my-5 mx-0 prose prose-indigo prose-lg">
                 {!! $post->body !!}
             </p>
         </div>

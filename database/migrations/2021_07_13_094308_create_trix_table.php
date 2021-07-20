@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTrixTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('nova_pending_trix_attachments', function (Blueprint $table) {
@@ -34,11 +29,6 @@ class CreateTrixTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('nova_pending_trix_attachments');

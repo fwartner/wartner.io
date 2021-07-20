@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Blog\PostController;
+use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->middleware('cacheResponse');
 Route::view('/contact', 'pages.contact')->middleware('cacheResponse');

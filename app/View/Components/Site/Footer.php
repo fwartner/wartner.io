@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class site.footer extends Component
+class Footer extends Component
 {
     /**
      * Create a new component instance.

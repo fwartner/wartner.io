@@ -25,6 +25,7 @@
         "tailwindcss": "^2.2.2"
     },
     "dependencies": {
+        "shiki": "^0.9.5",
         "turbolinks": "^5.2.0"
     }
 }

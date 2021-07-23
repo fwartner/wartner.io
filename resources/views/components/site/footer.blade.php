@@ -1,15 +1,15 @@
 <div>
-    <footer class="bg-white">
+    <footer class="bg-white dark:bg-gray-800 dark:text-gray-300">
         <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
             <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
                 <div class="px-5 py-2">
-                    <a href="/about" class="text-base text-gray-500 hover:text-gray-900">
+                    <a href="/about" class="text-base dark:text-gray-300 text-gray-500 hover:text-gray-900">
                         About
                     </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="/blog" class="text-base text-gray-500 hover:text-gray-900">
+                    <a href="/blog" class="text-base dark:text-gray-300 text-gray-500 hover:text-gray-900">
                         Blog
                     </a>
                 </div>
@@ -21,25 +21,25 @@
                 </div> --}}
 
                 <div class="px-5 py-2">
-                    <a href="/imprint" class="text-base text-gray-500 hover:text-gray-900">
+                    <a href="/imprint" class="text-base dark:text-gray-300 text-gray-500 hover:text-gray-900">
                         Imprint
                     </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="https://load-podcast.com" class="text-base text-gray-500 hover:text-gray-900">
+                    <a href="https://load-podcast.com" class="text-base dark:text-gray-300 text-gray-500 hover:text-gray-900">
                         Podcast
                     </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="https://github.com/fwartner" class="text-base text-gray-500 hover:text-gray-900">
+                    <a href="https://github.com/fwartner" class="text-base dark:text-gray-300 text-gray-500 hover:text-gray-900">
                         Open Source
                     </a>
                 </div>
             </nav>
             <div class="flex justify-center mt-8 space-x-6">
-                <a href="https://instagram.com/wartnerio" class="text-gray-400 hover:text-gray-500">
+                <a href="https://instagram.com/wartnerio" class="text-gray-400 dark:text-gray-300 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -48,7 +48,7 @@
                     </svg>
                 </a>
 
-                <a href="https://twitter.com/fwartner" class="text-gray-400 hover:text-gray-500">
+                <a href="https://twitter.com/fwartner" class="text-gray-400 dark:text-gray-300 hover:text-gray-500">
                     <span class="sr-only">Twitter</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path
@@ -56,7 +56,7 @@
                     </svg>
                 </a>
 
-                <a href="https://github.com/fwartner" class="text-gray-400 hover:text-gray-500">
+                <a href="https://github.com/fwartner" class="text-gray-400 dark:text-gray-300 hover:text-gray-500">
                     <span class="sr-only">GitHub</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -65,7 +65,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="mt-8 text-base text-center text-gray-400">
+            <p class="mt-8 text-base text-center text-gray-400 dark:text-gray-300">
                 &copy; {{ date('Y') }} wartner.io - All rights resevred. Made with <i
                     class="text-red-400 fas fa-heart"></i> and <i class="fas fa-coffee"></i>
             </p>

@@ -7,7 +7,7 @@ use Infinety\Filemanager\FilemanagerField;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Trix;
+use GeneaLabs\NovaGutenberg\Gutenberg;
 
 class Post extends Resource
 {
@@ -48,7 +48,7 @@ class Post extends Resource
             BelongsTo::make('Category'),
             FilemanagerField::make('Featured Image')->folder('posts'),
             Text::make('Title'),
-            Trix::make('Body')->withFiles('public'),
+            Gutenberg::make('Body')
         ];
     }
 

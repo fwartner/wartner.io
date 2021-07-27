@@ -1,6 +1,10 @@
 <div>
     <figure>
-        <img class="w-full rounded-lg" src="{{ $post->banner }}" alt="{{ $post->title }}">
+        @if ($post->featured_image)
+            <img class="w-full rounded-lg" src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}">
+        @else
+            <img class="w-full rounded-lg" src="{{ $post->banner }}" alt="{{ $post->title }}">
+        @endif
     </figure>
 
     <div

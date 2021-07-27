@@ -18,3 +18,7 @@ Route::prefix('blog')->as('blog.')->group(function () {
 });
 
 Route::feeds();
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});

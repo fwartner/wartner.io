@@ -10,13 +10,13 @@
 <meta name="theme-color" content="#ffffff">
 <meta property="og:url" content="https://wartner.io/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="wartner.io - Development / Infrastructure / Life / More">
+<meta property="og:title" content="@yield('page_title')">
 <meta property="og:description" content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">
 <meta property="og:image" content="https://wartner.io/og/opengraph.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:domain" content="https://twitter.com/fwartner">
 <meta property="twitter:url" content="https://wartner.io/">
-<meta name="twitter:title" content="wartner.io - Development / Infrastructure / Life / More">
+<meta name="twitter:title" content="@yield('page_title')">
 <meta name="twitter:description" content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">
 <meta name="twitter:image" content="https://wartner.io/og/opengraph.png">
 {!! \App\Services\SchemaService::buildSchema() !!}

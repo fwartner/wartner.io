@@ -48,7 +48,7 @@ class Post extends Resource
             BelongsTo::make('Category'),
             FilemanagerField::make('Featured Image')->folder('posts'),
             Text::make('Title'),
-            Trix::make('Body')->withFiles('public')
+            Trix::make('Body')->withFiles('public'),
         ];
     }
 

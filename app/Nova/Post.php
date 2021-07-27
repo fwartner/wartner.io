@@ -8,6 +8,7 @@ use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use GeneaLabs\NovaGutenberg\Gutenberg;
+use Laravel\Nova\Fields\Trix;
 
 class Post extends Resource
 {
@@ -48,7 +49,7 @@ class Post extends Resource
             BelongsTo::make('Category'),
             FilemanagerField::make('Featured Image')->folder('posts'),
             Text::make('Title'),
-            Gutenberg::make('Body')
+            Trix::make('Body')->withFiles('public')
         ];
     }
 

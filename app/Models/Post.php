@@ -10,12 +10,14 @@ use Illuminate\Support\Str;
 use Laravel\Scout\Searchable;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
+use VanOns\Laraberg\Models\Gutenbergable;
 
 class Post extends Model implements Feedable
 {
     use HasFactory;
     use HasLikes;
     use Searchable;
+    use Gutenbergable;
 
     /**
      * @return void

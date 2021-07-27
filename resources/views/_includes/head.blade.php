@@ -10,8 +10,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="{{ asset('mstile-144x144.png') }}">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:url" content="https://wartner.io/">
-<meta property="og:type" content="website">
+
 <meta property="og:title" content="@yield('page_title') - wartner.io">
 <meta property="og:description"
     content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">

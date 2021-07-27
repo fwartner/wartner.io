@@ -6,7 +6,7 @@
 
     @push('meta')
         @php
-        $og = new OpenGraph();
+        $og = (new OpenGraph());
         $og->type('article')
             ->image(url('/storage/' . $post->featured_image))
             ->description($post->excerpt)

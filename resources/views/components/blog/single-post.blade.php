@@ -1,7 +1,7 @@
 <div>
     <figure>
         @if ($post->featured_image)
-            <img class="w-full rounded-lg" src="{{ public_path('/storage/posts/' . $post->featured_image) }}" alt="{{ $post->title }}">
+            <img class="w-full rounded-lg" src="{{ '/storage/' . $post->featured_image }}" alt="{{ $post->title }}">
         @else
             <img class="w-full rounded-lg" src="{{ $post->banner }}" alt="{{ $post->title }}">
         @endif

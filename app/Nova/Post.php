@@ -7,7 +7,6 @@ use Infinety\Filemanager\FilemanagerField;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use GeneaLabs\NovaGutenberg\Gutenberg;
 use Laravel\Nova\Fields\Trix;
 
 class Post extends Resource

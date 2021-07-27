@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fb6f9bcaaa2c1150d09cdfdf7ff2e3a",
+    "content-hash": "db83054fdf29324ce23889a87eec33df",
     "packages": [
         {
             "name": "advoor/nova-editor-js",
@@ -444,6 +444,79 @@
             "time": "2021-04-03T20:56:48+00:00"
         },
         {
+            "name": "butschster/meta-tags",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/butschster/LaravelMetaTags.git",
+                "reference": "bea864d4babbab8da227eb65fda0f15135d9a8d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/butschster/LaravelMetaTags/zipball/bea864d4babbab8da227eb65fda0f15135d9a8d9",
+                "reference": "bea864d4babbab8da227eb65fda0f15135d9a8d9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^5.6|^6.0|^7.0|^8.0",
+                "illuminate/console": "^5.6|^6.0|^7.0|^8.0",
+                "illuminate/contracts": "^5.6|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.6|^6.0|^7.0|^8.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^7.0|^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Butschster\\Head\\Providers\\MetaTagsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Meta": "Butschster\\Head\\Facades\\Meta",
+                        "PackageManager": "Butschster\\Head\\Facades\\PackageManager"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Butschster\\Head\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Buchnev",
+                    "email": "butschster@gmail.com"
+                }
+            ],
+            "description": "The most powerful and extendable tools for managing SEO Meta Tags in your Laravel project",
+            "keywords": [
+                "laravel5",
+                "lumen",
+                "metatags",
+                "opengraph",
+                "seo",
+                "webmaster"
+            ],
+            "support": {
+                "issues": "https://github.com/butschster/LaravelMetaTags/issues",
+                "source": "https://github.com/butschster/LaravelMetaTags/tree/v2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://liberapay.com/butschster",
+                    "type": "liberapay"
+                }
+            ],
+            "time": "2021-06-01T15:50:49+00:00"
+        },
+        {
             "name": "cakephp/chronos",
             "version": "2.2.0",
             "source": {
@@ -501,6 +574,65 @@
                 "source": "https://github.com/cakephp/chronos"
             },
             "time": "2021-06-17T13:49:10+00:00"
+        },
+        {
+            "name": "chriskonnertz/open-graph",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chriskonnertz/open-graph.git",
+                "reference": "75d2b5afeddd255bcf5d823cbe64f3623da3e01c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chriskonnertz/open-graph/zipball/75d2b5afeddd255bcf5d823cbe64f3623da3e01c",
+                "reference": "75d2b5afeddd255bcf5d823cbe64f3623da3e01c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "nesbot/carbon": "~1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ChrisKonnertz\\OpenGraph\\OpenGraphServiceProvider"
+                    ],
+                    "aliases": {
+                        "OpenGraph": "ChrisKonnertz\\OpenGraph\\OpenGraphFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ChrisKonnertz\\OpenGraph": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Konnertz"
+                }
+            ],
+            "description": "Class that assists in building Open Graph meta tags",
+            "keywords": [
+                "laravel",
+                "laravel5",
+                "ogp",
+                "open graph",
+                "opengraph"
+            ],
+            "support": {
+                "issues": "https://github.com/chriskonnertz/open-graph/issues",
+                "source": "https://github.com/chriskonnertz/open-graph/tree/v2.0.0"
+            },
+            "time": "2019-06-19T09:00:04+00:00"
         },
         {
             "name": "codex-team/editor.js",

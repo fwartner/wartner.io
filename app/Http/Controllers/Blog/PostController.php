@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
+use ChrisKonnertz\OpenGraph\OpenGraph;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -50,6 +52,11 @@ class PostController extends Controller
     public function show($slug)
     {
         $post = Post::where('slug', $slug)->first();
+        $og = (new OpenGraph());
+        $og->type('article')
+            ->image(url('/storage/' . $post->featured_image))
+            ->description($post->excerpt)
+            ->url();
 
         return view('blog.show', compact('post'));
     }

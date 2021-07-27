@@ -15,6 +15,7 @@ class CreatePostsTable extends Migration
 
             $table->foreignIdFor(User::class);
             $table->foreignIdFor(Category::class);
+            $table->string('featured_image')->nullable();
             $table->string('title');
             $table->string('slug')->unique();
             $table->longText('body');

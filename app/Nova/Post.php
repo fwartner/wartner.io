@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Infinety\Filemanager\FilemanagerField;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
@@ -45,6 +46,7 @@ class Post extends Resource
             ID::make(__('ID'), 'id')->sortable(),
             BelongsTo::make('User')->sortable(),
             BelongsTo::make('Category'),
+            FilemanagerField::make('Featured Image')->folder('posts'),
             Text::make('Title'),
             Trix::make('Body')->withFiles('public'),
         ];

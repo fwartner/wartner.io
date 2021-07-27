@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a628550b0fd542352a3e63c99d16013a",
+    "content-hash": "c4d906e1fb2fb604ed292ca130a9a165",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1692,6 +1692,70 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "infinety-es/nova-filemanager",
+            "version": "2.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfinetyEs/Nova-Filemanager.git",
+                "reference": "c6595c29e23cab01be6b7e37a069b13844397c91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfinetyEs/Nova-Filemanager/zipball/c6595c29e23cab01be6b7e37a069b13844397c91",
+                "reference": "c6595c29e23cab01be6b7e37a069b13844397c91",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "~2.0|~3.0",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6",
+                "phpunit/phpunit": "7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Infinety\\Filemanager\\FilemanagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Infinety\\Filemanager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Lagarda",
+                    "email": "eric@infinety.es",
+                    "role": "Developer"
+                },
+                {
+                    "name": "InfinetyEs",
+                    "email": "apps@infinety.es",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Filemanager tool for Laravel Nova",
+            "homepage": "https://github.com/InfinetyEs/nova-filemanager",
+            "keywords": [
+                "filemanager",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/InfinetyEs/Nova-Filemanager/issues",
+                "source": "https://github.com/InfinetyEs/Nova-Filemanager/tree/2.8.3"
+            },
+            "time": "2020-08-21T07:36:54+00:00"
         },
         {
             "name": "intervention/image",

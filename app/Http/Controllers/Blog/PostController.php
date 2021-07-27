@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
-use ChrisKonnertz\OpenGraph\OpenGraph;
 use Illuminate\Http\Request;
 
 class PostController extends Controller

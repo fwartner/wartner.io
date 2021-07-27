@@ -2,12 +2,12 @@
 
 namespace App\Nova;
 
+use GeneaLabs\NovaGutenberg\Gutenberg;
 use Illuminate\Http\Request;
 use Infinety\Filemanager\FilemanagerField;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use GeneaLabs\NovaGutenberg\Gutenberg;
 
 class Post extends Resource
 {
@@ -48,7 +48,7 @@ class Post extends Resource
             BelongsTo::make('Category'),
             FilemanagerField::make('Featured Image')->folder('posts'),
             Text::make('Title'),
-            Gutenberg::make('Body')
+            Gutenberg::make('Body'),
         ];
     }
 

@@ -1,7 +1,11 @@
 <div>
     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
         <a href="{{ route('blog.posts.show', $post->slug) }}" class="flex-shrink-0">
+            @if ($post->featured_image)
+            <img class="h-48 w-full object-cover" src="{{ '/storage/' . $post->featured_image }}" alt="{{ $post->title }}">
+            @else
             <img class="h-48 w-full object-cover" src="{{ $post->banner }}" alt="{{ $post->title }}">
+            @endif
         </a>
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">

@@ -1,3 +1,5 @@
+@stack('meta')
+
 <meta name="description" content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
@@ -11,14 +13,15 @@
 <meta property="og:url" content="https://wartner.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="@yield('page_title') - wartner.io">
-<meta property="og:description" content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">
+<meta property="og:description"
+    content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">
 <meta property="og:image" content="https://wartner.io/og/opengraph.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:domain" content="https://twitter.com/fwartner">
 <meta property="twitter:url" content="https://wartner.io/">
 <meta name="twitter:title" content="@yield('page_title') - wartner.io">
-<meta name="twitter:description" content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">
+<meta name="twitter:description"
+    content="A Software-Engineer, Father, Hobby-Cook and Podcast-Host from Lübeck, Germany 🇩🇪">
 <meta name="twitter:image" content="https://wartner.io/og/opengraph.png">
-{!! \App\Services\SchemaService::buildSchema() !!}
 
-{!! OpenGraph::renderTags() !!}
+{!! \App\Services\SchemaService::buildSchema() !!}

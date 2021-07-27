@@ -4,6 +4,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css">
     @endpush
 
+    @push('meta')
+        @php
+        $og = new OpenGraph();
+        $og->type('article')
+            ->image(url('/storage/' . $post->featured_image))
+            ->description($post->excerpt)
+            ->url();
+        @endphp
+        {!! $og->renderTags() !!}
+    @endpush
+
     @push('scripts')
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
         <script type="text/javascript">

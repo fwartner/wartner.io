@@ -51,11 +51,6 @@ class PostController extends Controller
     public function show($slug)
     {
         $post = Post::where('slug', $slug)->first();
-        $og = (new OpenGraph());
-        $og->type('article')
-            ->image(url('/storage/' . $post->featured_image))
-            ->description($post->excerpt)
-            ->url();
 
         return view('blog.show', compact('post'));
     }

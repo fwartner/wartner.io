@@ -9,7 +9,7 @@ Route::view('/contact', 'pages.contact')->middleware('cacheResponse');
 Route::view('/about', 'pages.about')->middleware('cacheResponse');
 Route::view('/imprint', 'pages.imprint')->middleware('cacheResponse');
 
-Route::get('/cv', CVController::class);
+Route::get('/cv', CVController::class)->middleware('cacheResponse');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

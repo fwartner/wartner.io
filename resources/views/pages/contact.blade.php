@@ -7,7 +7,6 @@
                 Contact
             </h2>
         </div>
-
     </div>
 
     @livewire('contact.form')

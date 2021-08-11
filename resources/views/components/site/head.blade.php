@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
+            <img class="object-cover object-top w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://res.cloudinary.com/wartnerio/image/upload/v1625915099/website/photos/0d081ca9-bf38-4759-a84f-3698079b913b_kqh3ig.jpg"
                 alt="Florian">
         </div>

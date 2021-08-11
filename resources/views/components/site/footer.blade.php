@@ -66,7 +66,7 @@
                 </a>
             </div>
             <p class="mt-8 text-base text-center text-gray-400 dark:text-gray-300">
-                &copy; {{ date('Y') }} wartner.io - All rights resevred. Made with <i
+                &copy; {{ date('Y') }} wartner.io - All rights reserved. Made with <i
                     class="text-red-400 fas fa-heart"></i> and <i class="fas fa-coffee"></i>
             </p>
         </div>

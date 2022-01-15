@@ -61,7 +61,7 @@
                             <p>In the past I created projects like Laramap & PHPMap. Unfortunately some projects went offline due to the amount of time i needed to spend on both projects.</p>
                             <p><strong>Here are some facts about me:</strong></p>
                             <ul>
-                                <li>👨‍💻 I'm a Solution Architect at <a href="https://nexus-united.com/">NEXUS United</a></li>
+                                <li>👨‍💻 I'm a selfemployed Solution Architect</li>
                                 <li>🎙️ I'm hosting the <a href="https://load-podcast.com/">LOAD-Podcast</a></li>
                                 <li>🌱 I'm currently learning Swift</li>
                                 <li>👯 I'm looking to collaborate on Laravel Projects</li>

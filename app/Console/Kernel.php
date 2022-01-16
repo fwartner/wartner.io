@@ -29,6 +29,7 @@ class Kernel extends ConsoleKernel
         $schedule->call(function () {
             (new PruneStaleAttachments)();
         })->daily();
+        $schedule->command(\Spatie\Health\Commands\RunHealthChecksCommand::class)->everyMinute();
     }
 
     /**

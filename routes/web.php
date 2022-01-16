@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Blog\PostController;
 use App\Http\Controllers\Cv\CVController;
+use Spatie\Health\Http\Controllers\HealthCheckResultsController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->middleware('cacheResponse');
@@ -25,3 +26,5 @@ Route::feeds();
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
+
+Route::get('health', HealthCheckResultsController::class);
